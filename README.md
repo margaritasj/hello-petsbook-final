@@ -16,7 +16,7 @@ A continuación, en el siguiente link se visualiza el prototipado de nuestra app
 
 [#MarvelApp](https://marvelapp.com/4b764hd)
 
-![Sin titulo](assets/images/prototipo.png)
+![Sin titulo](assets/images/favicon.png)
 
 ## Diseño
 
