@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('.btn-register').click(function() {
     event.preventDefault();
-    window.location.href = '../hello-petsbook-final/views/register.html';
+    window.location.href = '../hello-petsbook-final/views/register-general.html';
   });
 
   setTimeout(function() {
