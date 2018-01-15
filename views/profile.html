@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>PETSBOOK</title>
+	<!--Import Favicon-->
+	<link href="../assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+	<!--Import Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!--Import materialize.css-->
+	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
+	<!-- Import style.css-->
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+</head>
+
+<body>
+	<!-- Vista Perfil -->
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<ul>
+					<li>
+						<label class="label-icon return-icon" for="return">
+							<i class="material-icons padding-arrow">arrow_back</i>
+						</label>
+					</li>
+					<li class="row">
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<section>
+		<div class="row">
+			<div class="col s12 l3">
+				<div class="card-panel card-profile center-align">
+					<a href="../views/profile.html" id="photo-user" class=".hide-on-med-and-up"></a>
+					<a id="name-user" class="card-name" href="profile.html">Goofy</a>
+					<div class="avatar-container center-align">
+						<img src="../assets/images/dog-perfil.jpg" alt="" class="avatar-lg circle margin-top">
+					</div>
+					<div class="collection white">
+						<div class="col offset-s1 s4 offset-l1 l4">
+							<div class="followers-container center-align">
+								<span class="counter" data-followers="20">20</span>
+								<p>Huellidores</p>
+							</div>
+						</div>
+						<div class="col offset-s1 s4 offset-l1 l4">
+							<div class="following-container center-align">
+								<span class="counter" data-following="20">20</span>
+								<p>Huellidos</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l9 ">
+				<div class="card-panel green lighten-5 center-align">
+					<div class="row">
+						<form action="">
+							<div class="input-field col s12 l12">
+								<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+								<label for="icon_prefix2">Pensamientos que dejan huella</label>
+							</div>
+							<button class="btn waves-effect waves-light" id="btn-addimg" type="submit" name="action">
+								<i class="material-icons">pets</i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row center-align">
+			<!-- indicador de estado de adopcion -->
+			<div class="col s12 l3">
+				<div class="selector">
+					<span>Me adoptaron</span>
+					<div class="switch">
+						<label>
+							<input type="checkbox">
+							<span class="lever"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- mini galeria de fotos -->
+			<div class="card-panel card-profile">
+				<div class="photos-container">
+					<figure class="square z-depth-3 center-align">
+						<img class="square z-depth-3 center-align" src="../assets/images/selfie-mascota.jpg" alt="">
+					</figure>
+					<figure class="square z-depth-3"></figure>
+					<figure class="square z-depth-3"></figure>
+					<figure class="square z-depth-3 hide-on-small-only"></figure>
+					<figure class="square z-depth-3 hide-on-small-only"></figure>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- tabs -->
+			<div class="col s12 m12 l12">
+				<ul id="tabs-swipe" class="tabs tab-btn">
+					<li class="tab col s4 l4">
+						<a class="active" href="#notices">HuelliNotas</a>
+					</li>
+					<li class="tab col s4 l4">
+						<a href="#photos">HuelliFotos</a>
+					</li>
+					<li class="tab col s4 l4">
+						<a href="#contacts">HuelliAmigos</a>
+					</li>
+				</ul>
+				<div id="notices" class="col s12"></div>
+				<div id="photos" class="col s12"></div>
+				<div id="contacts" class="col s12"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 l12 ">
+				<div class="card-panel green lighten-5 center-align">
+					<div class="row padding">
+						<div class="input-field col s12 pull-right ">
+							<br>
+							<textarea id="textarea-1" class="materialize-textarea padding"> </textarea>
+							<label class="padding-bottom active" for="textarea-1">
+								<img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs padding"> Mis HuelliPensamientos:
+							</label>
+						</div>
+						<div class="col offset-s5 s8 m12 offset-l8 l4">
+							<button class="btn waves-effect waves-light modal-trigger" id="" type="submit" data-target="modalimg" name="action">
+								<i class="material-icons">photo</i>
+							</button>
+							<!-- Modal Structure -->
+							<div id="modalimg" class="modal" style="z-index: 1003;">
+								<div class="modal-content">
+									<div class="file-field input-field">
+										<div class="btn">
+											<span>File</span>
+											<input type="file">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button class="btn waves-effect waves-light" id="btn-addimg" type="submit" name="action">
+										<i class="material-icons">pets</i>
+									</button>
+								</div>
+							</div>
+							<button class="btn waves-effect waves-light" id="btn-post" type="submit" name="action">
+								<i class="material-icons">pets</i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row padding">
+				<div class="col s12 m12 l12">
+					<div id="publication">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Structure -->
+		<div id="modalimg" class="modal">
+			<div class="modal-content">
+				<div class="file-field input-field">
+					<div class="btn">
+						<span>File</span>
+						<input type="file">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn waves-effect waves-light" id="btn-addimg" type="submit" name="action">
+					<i class="material-icons">pets</i>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!--Import Firebase-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>-->
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+	<!--Import materialize.js-->
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+	<!-- login.js-->
+	<script type="text/javascript" src="../js/profile.js"></script>
+</body>
+
+</html>
