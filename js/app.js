@@ -3,11 +3,11 @@ $(document).ready(function() {
 
   $('.btn-register').click(function() {
     event.preventDefault();
-    window.location.href = '../hello-petsbook/views/register.html';
+    window.location.href = '../hello-petsbook-final/views/register.html';
   });
 
   setTimeout(function() {
-    window.location.href = '../hello-petsbook/views/login.html';
+    window.location.href = '../hello-petsbook-final/views/login.html';
   }, 25000);
 
   /* if (isMobile()) {
