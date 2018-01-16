@@ -7,7 +7,7 @@ $(document).ready(function () {
       event.preventDefault();
       var post = $('#textarea-1').val();
       $('#textarea-1').val('');
-      $('#publication').first().append('<div class="card">' + '<div class ="avatar-container-2">' + '<img src = "../assets/images/dog-perfil.jpg" class="circle avatar-xs">' + '<span>' + '<p> Maya </p>' + '</span>' + '</div>' + '<div class="card-content wrap">' + '<p>' + post + '</p>' + '<br>' + '<span class="grey-text">Publicado a las ' + getTime() + 'hrs.' + '</span>' + '<br>' + '<div id="add-comment" class="col s12 m12">' + '<input id="input-comment" placeholder="Add a comment.." type="text">' + '</div>' + '</div>' + '</div>');
+      $('#publication').prepend('<div class="card">' + '<div class ="avatar-container-2">' + '<img src = "../assets/images/dog-perfil.jpg" class="circle avatar-xs">' + '<span>' + '<p> Maya </p>' + '</span>' + '</div>' + '<div class="card-content wrap">' + '<p>' + post + '</p>' + '<br>' + '<span class="grey-text">Publicado a las ' + getTime() + 'hrs.' + '</span>' + '<br>' + '<div id="add-comment" class="col s12 m12">' + '<input id="input-comment" placeholder="Add a comment.." type="text">' + '</div>' + '</div>' + '</div>');
       $('#textarea-1').val('');
       $('#textarea-1').focus();
     });
